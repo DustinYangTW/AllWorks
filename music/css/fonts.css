@@ -1,0 +1,25 @@
+﻿@font-face {
+    font-family: 'webdings';
+    src: url('../fonts/webdings.eot') format('embedded-opentype');
+}
+
+
+@font-face {
+    font-family: 'webdings';
+    src: url('../fonts/webdings.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'webdings';
+    src: url('../fonts/webdings.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'webdings';
+    src: url('../fonts/webdings.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'webdings';
+    src: url('../fonts/webdings.woff2') format('woff2');
+}

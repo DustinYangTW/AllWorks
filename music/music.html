@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>楊家豪的音樂撥放器</title>
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="css/newHW03.css" rel="stylesheet" type="text/css" />
+    <link href="css/Tatd.css" rel="stylesheet" type="text/css" />
+    <link href="css/TimeBar.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div id="outinsidle">
+        <header class="Titlename">
+            楊家豪的音樂撥放器
+        </header>
+        <main id="OutSizeDivDottom" class="flexspace">
+            <div id="centerDiv">
+                <div id="select">
+                    <!-- event  -->
+                    <select id="song">
+                    </select>
+                </div>
+                <div class="ControlPanel">
+                    <ul id="changeColor" class="flexspace">
+                        <li onclick="Play()" id="playPause">4</li>
+                        <li onclick="Stop()"><</li>
+                        <li onclick="changenextsong(-1)">9</li>
+                        <li onclick="changeTime(-5)">7</li>
+                        <li onclick="changeTime(+5)">8</li>
+                        <li onclick="changenextsong(+1)">:</li>
+                        <li onclick="set_stopvolume()">V</li>
+                        <li onclick="set_Loop()">q</li>
+                        <li onclick="set_Random()">s</li>
+                        <li onclick="set_allPlayEnd()">`</li>
+                        <li onclick="songBook()">@</li>
+                    </ul>
+                </div>
+                <div id="color-container">
+                    <div id="color-progressr"></div>
+                </div>
+
+                <div id="rangbar">
+                    <div>
+                        <input id="rangeVolume" type="range" value="" max="100" min="10" oninput="setVolume()"/>
+                    </div>
+                    <div>
+                        <input id="rangeFast" type="range" value="" max="100" min="0.1" oninput="setSpeed()" />
+                    </div>
+                </div>
+
+                <div id="musicdib" class="flexspace">
+
+                    <div id="volumeDiv" class="flexcow">
+
+                        <div>
+                            音量
+                        </div>
+                        <div>
+                            <input id="Volumedown" type="button" value="-" onclick="changeVolume(-10)" />
+                            <input id="Volumeup" type="button" value="+" onclick="changeVolume(+10)" />
+                        </div>
+                        <div>
+                            <input id="TextVolume" type="text" readonly="readonly" value="50%" />
+                        </div>
+                    </div>
+
+                    <div id="fastDiv" class="flexcow">
+
+                        <div>
+                            播放速度
+                        </div>
+                        <div>
+                            <input id="Fastdown" type="button" value="-" onclick="changeSpeed(-10)" />
+                            <input id="Fastup" type="button" value="+" onclick="changeSpeed(+10)" />
+                        </div>
+                        <div>
+                            <input id="TextFast" type="text" readonly="readonly" value="X1" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="timeDiv" class="flexspace">
+                    <div id="firstTime">00 : 00</div>
+                    <div>&ensp;/&ensp;</div>
+                    <div id="endTime">00 : 00</div>
+                </div>
+                <div id="set_playlaw">
+                    單曲播放
+                </div>
+                <div id="musicName">
+                    <marquee behavior="alternate">請按下播放鈕歌曲</marquee> <!--利用behavior="alternate"製造左右牆壁來回跑-->
+                </div>
+                <div id="book" class="hide" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="divborder">
+                        <div class="coverhover">現有歌單</div>
+                        <div title="music/story01.mp3">蕭煌奇-說故事的歌</div>
+                        <div title="music/Aimer01.mp3">Aimer-カタオモイ</div>
+                        <div title="music/SunDance.mp3">Aimer-コイワズライ</div>
+                        <div title="music/bokugasinoutoomoxtutanoha.mp3">中島美嘉-僕が死のうと思ったのは</div>
+                        <div title="music/Refrain.mp3">Aimer-眩いばかり</div>
+                        <div title="music/Dorama.mp3">Aimer-ドラマ「ホットママ」</div>
+                        <div title="music/BeCrazyForMe.mp3">EIKO Starring 96猫-Be Crazy For Me</div>
+                    </div>
+                    <div class="divborder" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="coverhover">
+                            想要播放的歌曲
+                        </div>
+                    </div>
+                </div>
+                <footer id="updataMusicSong" onclick="re_SetMusic()" class="hide">更新歌單</footer>
+            </div>
+        </main>
+        <audio id="music">
+            <source type="audio/mpeg"/>
+        </audio>
+        
+    </div>
+
+    <!--<div id="full-screen">
+        <div id="text">
+            <div>2秒廣告( P.s.沒有廣告收益)</div>
+            <div>
+                <img src="image/BC.gif" />
+            </div>
+            <div id="aid"></div>
+        </div>
+    </div>-->
+
+    <script src="js/public.js"></script>
+    <script src="js/permanent.js"></script>
+    <script src="js/otherFeatures.js"></script>
+    <script src="js/Btn.js"></script>
+    <script src="js/musicTime.js"></script>
+    <script src="js/Tatd.js"></script>
+    <script src="js/ControlMusic.js"></script>
+</body>
+</html>

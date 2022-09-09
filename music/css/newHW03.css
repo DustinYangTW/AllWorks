@@ -1,0 +1,150 @@
+﻿body {
+    background-color: wheat;
+    font-family: DFKai-SB; /*變成標楷體*/
+    font-size: 25px;
+}
+
+div {
+    text-align: center;
+    padding: 4px;
+}
+
+.Titlename {
+    padding: 2%;
+    font-size: 40px;
+    text-align-last: justify;
+}
+
+#outSizeDiv {
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#outinsidle {
+    margin: auto;
+    width: 80%;
+    background-color: burlywood;
+}
+
+#centerDiv{
+    background-color: #eae6218e;
+    width: 98%;
+}
+/*上面不能用flex排版，不然會不好調整div大小*/
+
+.flexspace {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flexcow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 25%;
+    flex-wrap: wrap;
+}
+
+.ControlPanel ul {
+    flex-direction: row;
+    padding: 0;
+}
+
+    .ControlPanel ul li {
+        list-style: none;
+        font-family: Webdings;
+        font-size: 2.5rem;
+        border: 2px solid;
+        padding: 3px;
+        box-shadow: 2px 2px 5px black;
+        cursor: pointer; /*增加鼠標特效*/
+    }
+
+        .ControlPanel ul li:hover {
+            background-color: red;
+            opacity: 0.8;
+        }
+
+#timeDiv {
+    justify-content: center;
+}
+
+#TextFast, #TextVolume {
+    width: 40px;
+}
+
+
+#rangbar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    #rangbar div {
+        width: 50%;
+    }
+
+    #rangbar input {
+        width: 80%;
+    }
+
+#song {
+    width: 100%;
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 30px;
+    padding: 20px;
+    text-align-last: justify;
+}
+
+
+
+.divborder {
+    border: 1px solid;
+    width:50%;
+}
+
+
+#book div div:hover {
+    background-color: cyan;
+}
+
+footer {
+    font-size: 1.5rem;
+    border: 1px solid;
+    padding: 3px;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    background-color: aquamarine;
+    align-items: end;
+    justify-content: center
+}
+
+footer:hover{
+    background-color:cyan;
+}
+
+#book {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.open {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coverhover {
+    background-color: cyan;
+    padding:0px;
+    margin:0px;
+    border:2px solid;
+}
