@@ -30,7 +30,7 @@
 
 可以透過拉取歌曲，來達到撥放想要撥放的歌曲</br>
 ![image](https://user-images.githubusercontent.com/106080221/189477015-fc15d2f5-1263-4d7c-b724-63e37bf188f4.png)</br>
-![image](https://user-images.githubusercontent.com/106080221/189477030-35f3c4a7-2214-43a1-badb-f6d7c8392bee.png)
+![image](https://user-images.githubusercontent.com/106080221/189477201-66e85b12-c62d-4236-8c83-73e9ddb928a4.png)
 </br></br>
 3.如果想要撥放的歌曲，內部沒有歌曲，會跳警告通知，並撥放全曲</br>
 ![image](https://user-images.githubusercontent.com/106080221/189477056-5414ddd5-db71-471b-8c96-bbbb7597e9cf.png)
