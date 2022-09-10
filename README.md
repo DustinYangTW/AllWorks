@@ -15,7 +15,7 @@
 8.全曲循環</br>
 9.音樂資料庫</br>
 </br></br>
-![image](https://user-images.githubusercontent.com/106080221/189476132-da74a64f-bee9-4bd0-8471-27918d18e56c.png)
+![image](https://user-images.githubusercontent.com/106080221/189477269-eb48506d-6171-400c-aea4-9a4387a96da0.png)
 </br>
 </br>
 
