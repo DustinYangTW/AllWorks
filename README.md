@@ -1,7 +1,9 @@
-【前端介面處理】
+<a href="https://dustinyangtw.github.io/Music/music/music.html">點我看作品</a> 
+</br></br>
+【前端介面處理】</br>
 透過一般的css調整出來的前端介面
-</br>
-【功能介紹】
+</br></br>
+【功能介紹】</br>
 透過原生的JavaScript做出相對應的功能，裡面有</br>
 1.撥放音樂</br>
 2.暫停</br>
